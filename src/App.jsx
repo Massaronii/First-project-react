@@ -1,7 +1,13 @@
-function App() {
+import { Post}  from "./Post"
+import "styles.css"
+
+
+export function App() {
   return (
-    <h1>Hello world</h1>
+    <div>
+      <Post author="yago" content="lorem" />
+      <Post author="yuri" content="loaem" />
+    </div>
   )
 }
 
-export default App
