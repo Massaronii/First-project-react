@@ -1,4 +1,6 @@
 import styles from "./Comment.module.css"
+import { Trash, ThumbsUp } from "phosphor-react"
+
 
 export function Comment() {
   return (
@@ -8,7 +10,7 @@ export function Comment() {
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>
           <header>
-            <div className={authorAndTime}>
+            <div className={styles.authorAndTime}>
               <strong>Yago Massaroni</strong>
               <time title="11 de maio ás 08:13" dateTime="2022-05-11 08:13:00">
                 Cerca de 1 hora atrás
@@ -16,7 +18,7 @@ export function Comment() {
             </div>
 
             <button title="Deletar Comentário">
-              <Trash size={20}/>
+              <Trash size={24}/>
             </button>
           </header>
 
